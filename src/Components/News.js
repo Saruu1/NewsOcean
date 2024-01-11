@@ -60,7 +60,7 @@ const [totalResults, settotalResults] = useState(0)
   
     return (
       <div>
-        <h2 className='text-center'style= {{margin:'35px', color:'#097969', marginTop:'90px'}}>NewsOcean - {capitalize(props.category)} Headlines</h2>
+        <h2 className='text-center'style= {{margin:'35px', color:'#097969', marginTop:'110px' }}>NewsOcean - {capitalize(props.category)} Headlines</h2>
          {loading && <Spinner/>}
          <InfiniteScroll
           dataLength={articles.length}
