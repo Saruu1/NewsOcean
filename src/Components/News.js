@@ -53,8 +53,7 @@ const [totalResults, settotalResults] = useState(0)
       setpage(page+1)
       let data = await fetch(url);
       let ParsedData = await data.json();
-     // setarticles(articles.concat(ParsedData.articles));
-      setarticles((prevArticles) => [...prevArticles, ...ParsedData.articles]);
+     setarticles(articles.concat(ParsedData.articles));
       settotalResults(ParsedData.totalResults);
     }  
       
